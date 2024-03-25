@@ -1,0 +1,192 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+}
+/* root page */
+
+.root{
+    background-color: #fe424d !important;
+    text-align: center !important;
+}
+
+
+/* container */
+
+.container {
+    flex: 1;
+}
+
+/* navbar */
+.navbar {
+    padding: 5rem 1rem;
+    background: #fff;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* Footer */
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+
+}
+
+.f-info {
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 8rem;
+    background-color: #ebebeb;
+
+}
+
+.f-info-socials {
+    font-size: 1.2rem;
+}
+
+/* Cards */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text-p {
+    font-weight: 400;
+}
+
+/* listing-link */
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* card hover effect */
+.card-img-overlay {
+    opacity: 0;
+
+}
+
+.card-img-overlay:hover {
+    opacity: 0.3;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+
+/* New Page */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+    padding: 0.5rem 2rem !important;
+}
+
+/* Show img */
+.show-img {
+    height: 30vh !important;
+
+
+}
+
+.btns {
+    display: flex;
+    padding: 1rem 2rem 2rem 2rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+.review-card {
+    border: 1px solid rgb(77, 77, 78) !important;
+    padding: 1rem 2rem !important;
+}
+
+/* map */
+#map {
+   
+    height: 250px;
+    width: 60vw;
+}
+/* main page   */
+#filters {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filter {
+    text-align: center;
+    opacity: 0.7;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p {
+    font-size: 0.8rem;
+}
+
+.tax-info {
+    color: green;
+    display: none;
+}
+.tax-toggle{
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+.tax-toggle input{
+    cursor: pointer;
+}
+/* navbar */
+.navbar input{
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    margin-right: 1rem;
+    width: 18rem;
+    box-shadow: 0px 0px 4px 1px rgb(10 10 10 / 83%);
+  }
+  .navbar button{
+    border-radius: 3rem;
+    background-color: #fe424d;
+    color: #fff;
+    box-shadow: 0px 0px 4px 1px rgb(10 10 10 / 83%);
+    padding: 0.5rem 1rem;
+  }
+  .navbar button:hover{
+    box-shadow:inset 0px 0px 4px 1px rgb(10 10 10 / 83%);
+    background-color: #fe424d;
+  }
