@@ -4,6 +4,10 @@ const wrapAsync = require("../utils/wrapasync");
 const { isLoggedIn, isOwner, validateSchema } = require("../middelware.js");
 const multer = require("multer");
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd59eb4a779d7cc7eb51b0bc94ac9c652eb99cee
 // for upload file...........................
 const { storage } = require("../cloudConfig.js");
 const upload = multer({ storage });

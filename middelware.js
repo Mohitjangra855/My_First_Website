@@ -1,10 +1,19 @@
 const Listing = require("./models/listing.js");
+<<<<<<< HEAD
 const ExpressError = require("./utils/ExpressError.js");
 const Review = require("./models/review.js");
 const { listingSchema } = require("./schema.js")
 const { reviewSchema } = require("./schema.js")
 
 // login checking to create new listing
+=======
+const Review = require("./models/review.js");
+const ExpressError = require("./utils/ExpressError.js");
+const { listingSchema } = require("./schema.js")
+const { reviewSchema } = require("./schema.js")
+// login checking to create new listing
+
+>>>>>>> dd59eb4a779d7cc7eb51b0bc94ac9c652eb99cee
 module.exports.isLoggedIn = (req, res, next) => {
     if (!req.isAuthenticated()) {
         // redirectURL save

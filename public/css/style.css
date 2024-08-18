@@ -143,10 +143,14 @@ body {
     justify-content: center;
     gap: 1rem;
 }
+<<<<<<< HEAD
 #filters a{
     text-decoration: none;
     color: black;
 }
+=======
+
+>>>>>>> dd59eb4a779d7cc7eb51b0bc94ac9c652eb99cee
 .filter {
     text-align: center;
     opacity: 0.7;

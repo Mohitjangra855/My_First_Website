@@ -2,7 +2,11 @@
  "engine": {
   "node": "20.10.0"
  },
+<<<<<<< HEAD
  "name": "my_first_website",
+=======
+ "name": "majorproject",
+>>>>>>> dd59eb4a779d7cc7eb51b0bc94ac9c652eb99cee
  "version": "1.0.0",
  "description": "",
  "main": "index.js",

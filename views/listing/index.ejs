@@ -1,4 +1,5 @@
 <% layout("/layouts/boilerplate") %>
+<<<<<<< HEAD
 
     <div id="filters">
         <a href="/category/trending">
@@ -47,6 +48,38 @@
                 <p>Arctic</p>
             </div>
         </a>
+=======
+  
+    <div id="filters">
+        <div class="filter">
+            <i class="fa-solid fa-fire"></i>
+            <p>Tranding</p>
+        </div>
+        <div class="filter"><i class="fa-solid fa-person-shelter"></i>
+            <p>Rooms</p>
+        </div>
+        <div class="filter"><i class="fa-solid fa-mountain-city"></i>
+            <p>Iconic Cities</p>
+        </div>
+        <div class="filter"><i class="fa-solid fa-mountain"></i>
+            <p>Mountains</p>
+        </div>
+        <div class="filter"><i class="fa-brands fa-fort-awesome"></i>
+            <p>Castels</p>
+        </div>
+        <div class="filter"><i class="fa-solid fa-person-swimming"></i>
+            <p>Amazing Pools</p>
+        </div>
+        <div class="filter"><i class="fa-solid fa-tents"></i>
+            <p>Camping</p>
+        </div>
+        <div class="filter"><i class="fa-solid fa-tractor"></i>
+            <p>Farms</p>
+        </div>
+        <div class="filter"><i class="fa-regular fa-snowflake"></i>
+            <p>Arctic</p>
+        </div>
+>>>>>>> dd59eb4a779d7cc7eb51b0bc94ac9c652eb99cee
         <div class="tax-toggle">
             <div class="form-check-reverse form-switch">
                 <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
@@ -84,10 +117,17 @@
             console.log("clicked");
             for (info of textInfo) {
                 let randomNum = Math.floor(Math.random() * 20) + 10;
+<<<<<<< HEAD
                 info.innerText = "+" + randomNum + "% GST";
                 if (info.style.display != "inline") {
                     info.style.display = "inline"
                 } else {
+=======
+                info.innerText = "+"+randomNum+"% GST";
+                if(info.style.display!="inline"){
+                    info.style.display = "inline"
+                }else{
+>>>>>>> dd59eb4a779d7cc7eb51b0bc94ac9c652eb99cee
                     info.style.display = "none"
 
                 }

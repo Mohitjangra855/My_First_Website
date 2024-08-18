@@ -7,7 +7,10 @@ let listingSchema = Joi.object({
         country: Joi.string().required(),
         price: Joi.number().required().min(0),
         image: Joi.string().allow("", null),
+<<<<<<< HEAD
         category:Joi.string()
+=======
+>>>>>>> dd59eb4a779d7cc7eb51b0bc94ac9c652eb99cee
 
     }).required(),
 })
