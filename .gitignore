@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-/node_modules
-.env
-/init
-=======
 .env
 node_modules/
 init/
->>>>>>> dd59eb4a779d7cc7eb51b0bc94ac9c652eb99cee
