@@ -1,0 +1,100 @@
+<% layout("/layouts/boilerplate") %>
+
+    <div id="filters">
+        <a href="/category/trending">
+            <div class="filter">
+                <i class="fa-solid fa-fire"></i>
+                <p>Tranding</p>
+            </div>
+        </a><a href="/category/rooms">
+            <div class="filter">
+                <i class="fa-solid fa-person-shelter"></i>
+                <p>Rooms</p>
+            </div>
+        </a>
+        <a href="/category/Iconic Cities">
+            <div class="filter"><i class="fa-solid fa-mountain-city"></i>
+                <p>Iconic Cities</p>
+            </div>
+        </a>
+        <a href="/category/Mountains">
+            <div class="filter"><i class="fa-solid fa-mountain"></i>
+                <p>Mountains</p>
+            </div>
+        </a>
+        <a href="/category/Castles">
+            <div class="filter"><i class="fa-brands fa-fort-awesome"></i>
+                <p>Castles</p>
+            </div>
+        </a>
+        <a href="/category/Amazing Pool">
+            <div class="filter"><i class="fa-solid fa-person-swimming"></i>
+                <p>Amazing Pools</p>
+            </div>
+        </a>
+        <a href="/category/Camping">
+            <div class="filter"><i class="fa-solid fa-tents"></i>
+                <p>Camping</p>
+            </div>
+        </a>
+        <a href="/category/Farms">
+            <div class="filter"><i class="fa-solid fa-tractor"></i>
+                <p>Farms</p>
+            </div>
+        </a>
+        <a href="/category/Arctic">
+            <div class="filter"><i class="fa-regular fa-snowflake"></i>
+                <p>Arctic</p>
+            </div>
+        </a>
+        <div class="tax-toggle">
+            <div class="form-check-reverse form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Display total after taxes</label>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <% for(let listing of alllistings){ %>
+            <a href="/listing/<%= listing._id  %>" class="listing-link">
+                <div class="card col">
+
+                    <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image" style="height: 20rem;">
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <b>
+                                <%= listing.title %>
+                            </b><br>
+                            &#8377; <%= listing.price.toLocaleString('en-IN') %> &nbsp;
+                                <i class="tax-info"></i>
+
+                        </p>
+                    </div>
+
+                </div>
+            </a>
+            <% } %>
+    </div>
+
+    <script>
+        let textInfo = document.getElementsByClassName("tax-info");
+        let btn = document.getElementById("flexSwitchCheckDefault");
+        btn.addEventListener("click", () => {
+            console.log("clicked");
+            for (info of textInfo) {
+                let randomNum = Math.floor(Math.random() * 20) + 10;
+                info.innerText = "+" + randomNum + "% GST";
+                if (info.style.display != "inline") {
+                    info.style.display = "inline"
+                } else {
+                    info.style.display = "none"
+
+                }
+                console.log(info);
+            }
+
+
+        })
+
+    </script>
