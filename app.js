@@ -34,6 +34,8 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
+
+
 const dbUrl = process.env.MONGO_URL;
 // const dbUrl = "mongodb://127.0.0.1:27017/wonderlust"
 const store = mongoStore.create({
